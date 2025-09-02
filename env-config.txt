@@ -1,0 +1,14 @@
+# CONFIGURAÇÕES DE AMBIENTE - Copie para .env.local
+
+# Configurações do Webhook n8n para Chat IA
+N8N_WEBHOOK_URL=https://automacao-n8n.jqnbbt.easypanel.host/webhook/7ded8e5e-bf5f-4318-8762-c29c206c6a1c
+
+# Outras configurações (opcional)
+N8N_ENVIRONMENT=production
+N8N_TIMEOUT=30000
+
+# INSTRUÇÕES:
+# 1. Crie um arquivo chamado .env.local na raiz do projeto
+# 2. Copie o conteúdo acima para o arquivo
+# 3. Salve o arquivo
+# 4. Reinicie o servidor de desenvolvimento (npm run dev)
