@@ -64,11 +64,6 @@ const nextConfig = {
   async rewrites() {
     return [];
   },
-
-  // Configurações de experimental (se necessário)
-  experimental: {
-    optimizeCss: true,
-  },
 };
 
 module.exports = nextConfig;
