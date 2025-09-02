@@ -13,7 +13,7 @@ COPY pnpm-lock.yaml ./
 
 # Instalar dependências
 RUN npm install -g pnpm
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --no-frozen-lockfile
 
 # Copiar código fonte
 COPY . .
@@ -25,7 +25,7 @@ RUN pnpm run build
 FROM node:18-alpine AS runner
 WORKDIR /app
 
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 # Criar usuário não-root
 RUN addgroup --system --gid 1001 nodejs
@@ -42,8 +42,8 @@ USER nextjs
 # Expor porta
 EXPOSE 3000
 
-ENV PORT 3000
-ENV HOSTNAME "0.0.0.0"
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
 
 # Comando para iniciar a aplicação
 CMD ["node", "server.js"]
