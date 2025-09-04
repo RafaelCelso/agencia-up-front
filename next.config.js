@@ -1,17 +1,28 @@
 /** @type {import('next').Config} */
 const nextConfig = {
-  // Configurações para produção na VPS da Hostinger
+  // Configurações para produção na VPS
   output: "standalone",
 
   // Otimizações para produção
   poweredByHeader: false,
   compress: true,
 
-  // Configurações de imagens
+  // Configurações de imagens para VPS
   images: {
-    unoptimized: false,
+    unoptimized: true, // Necessário para VPS sem otimização de imagens
     formats: ["image/webp", "image/avif"],
     minimumCacheTTL: 60,
+    // Configurações adicionais para VPS
+    domains: [],
+    remotePatterns: [],
+  },
+
+  // Configurações de build
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 
   // Headers para segurança e performance

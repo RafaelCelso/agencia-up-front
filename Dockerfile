@@ -15,6 +15,9 @@ RUN pnpm install
 # Copiar código fonte
 COPY . .
 
+# Verificar se as imagens estão presentes
+RUN ls -la public/images/
+
 # Build da aplicação
 RUN pnpm run build
 
