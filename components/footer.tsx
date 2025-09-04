@@ -28,11 +28,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <Image
-              src="/images/up-front-logo.png"
+              src="/images/up-front-logo.webp"
               alt="Up Front Logo"
-              width={150}
-              height={48}
-              className="h-12 w-auto mb-4"
+              width={200}
+              height={64}
+              className="h-16 w-auto mb-4"
             />
             <p className="text-muted-foreground mb-6 max-w-md">
               Agência digital especializada em transformar ideias em soluções
