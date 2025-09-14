@@ -306,7 +306,8 @@ export function AnimatedAIChat() {
       setIsTyping(true);
 
       try {
-        // Envia mensagem para o webhook do n8n
+        // Para VPS com Next.js, sempre usa a API route
+        // A API route já gerencia a comunicação com o webhook n8n
         const response = await fetch("/api/ai-chat", {
           method: "POST",
           headers: {
