@@ -32,9 +32,10 @@ export function Header() {
             <Image
               src="/images/up-front-logo.webp"
               alt="Up Front Logo"
-              width={180}
-              height={60}
-              className="h-12 w-auto"
+              width={200}
+              height={64}
+              className="h-10 sm:h-12 w-auto"
+              priority
             />
           </Link>
 

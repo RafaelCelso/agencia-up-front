@@ -32,7 +32,7 @@ export function Footer() {
               alt="Up Front Logo"
               width={200}
               height={64}
-              className="h-16 w-auto mb-4"
+              className="h-12 sm:h-16 w-auto mb-4"
             />
             <p className="text-muted-foreground mb-6 max-w-md">
               Agência digital especializada em transformar ideias em soluções
